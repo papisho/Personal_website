@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Personal Website</title>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="footer.css">
+    </head>
+    <body>
+        <!-- Header with Navigation -->
+        <header>
+            <div class="container">
+                <nav>
+                    <div class="logo">MyName</div>
+                    <ul class="nav-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Hi, I'm [Your Name]</h1>
+                    <p>I build things for the web and share my journey along the
+                        way.</p>
+                    <a href="#projects" class="btn">View My Work</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Hello! I'm a passionate developer based in [My
+                            Location]. I love building digital experiences.</p>
+                        <p>When I'm not coding, you can find me [your hobbies].
+                            I believe in continuous learning.</p>
+                        <button class="resume-button">
+                            <a href="./resume.html" target="_blank">Resume</a>
+                        </button>
+                    </div>
+                    <div class="about-image">
+                        <img src="./Images/grad_pic.jpg"
+                            alt="Kidus with a black suit">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title">My Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image"
+                            style="background-image: url('https://via.placeholder.com/400x300');"></div>
+                        <div class="project-info">
+                            <h3>Project Title 1</h3>
+                            <p>Short description of the project.</p>
+                            <a href="#" class="btn">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image"
+                            style="background-image: url('https://via.placeholder.com/400x300');"></div>
+                        <div class="project-info">
+                            <h3>Project Title 2</h3>
+                            <p>Short description of the project.</p>
+                            <a href="#" class="btn">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog" class="blog">
+            <div class="container">
+                <h2 class="section-title">From My Blog</h2>
+                <p style="text-align: center;">Blog content coming soon!</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <p style="text-align: center;">
+                    Reach out at <a
+                        href="mailto:your.email@example.com">your.email@example.com</a>.
+                </p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <p>Follow me on</p>
+                <div class="social-links">
+                    <a href="https://github.com/yourusername" target="_blank"
+                        aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://tiktok.com/@yourusername" target="_blank"
+                        aria-label="TikTok">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                </div>
+                <p>&copy; 2023 Your Name. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <script>
+        // I will be adding js for a nice transition from one section to another
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    </body>
+</html>
