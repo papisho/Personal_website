@@ -4,12 +4,14 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Kidus Assefa personal Website</title>
+        <title>Kidus's Personal Website</title>
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-        <link rel="stylesheet" href="header.css">
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" href="buttons.css">
         <link rel="stylesheet" href="footer.css">
+
     </head>
     <body>
         <!-- Header with Navigation -->
@@ -21,8 +23,19 @@
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#projects">Projects</a></li>
-                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#blog-preview">Blog</a></li>
+                        <!-- Updated link to blog directory -->
                         <li><a href="#contact">Contact</a></li>
+                        <li class="dropdown">
+                            <span class="dropdown-trigger">Categories <i
+                                    class="fas fa-chevron-down"></i></span>
+                            <ul class="dropdown-menu">
+                                <li><a class="movie" href="#">Movie
+                                        Recommendations</a></li>
+                                <li><a class="book" href="#">Book
+                                        Recommendations</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -30,12 +43,16 @@
 
         <!-- Hero Section -->
         <section id="home" class="hero">
+
             <div class="container">
                 <div class="hero-content">
                     <h1>Hi, I'm Kidus Assefa</h1>
-                    <p>I build things for the web and share my journey along the
-                        way.</p>
-                    <a href="#projects" class="btn">View My Work</a>
+                    <p>Cybersecurity enthusiast and a big fan of Arsenal FC</p>
+                    <div class="cta-buttons">
+                        <a href="#projects" class="btn">View My Work</a>
+                        <a href="#blog-preview" class="btn">Read My Blog</a>
+                        <!-- New blog CTA -->
+                    </div>
                 </div>
             </div>
         </section>
@@ -45,18 +62,44 @@
             <div class="container">
                 <h2 class="section-title">About Me</h2>
                 <div class="about-content">
-                    <div class="about-text">
-                        <p>Hello! I'm a passionate developer based in [My
-                            Location]. I love building digital experiences.</p>
-                        <p>When I'm not coding, you can find me [your hobbies].
-                            I believe in continuous learning.</p>
-                        <button class="resume-button">
-                            <a href="./resume.html" target="_blank">Resume</a>
-                        </button>
-                    </div>
                     <div class="about-image">
                         <img src="./Images/grad_pic.jpg"
-                            alt="Kidus with a black suit">
+                            alt="Kidus in a black suit">
+                    </div>
+                    <div class="about-text">
+                        <p class="intro-statement">My name is Kidus. I'm someone
+                            who believes that time can turn black coal into a
+                            shiny diamond, and that's how I try to live—always
+                            growing, always learning.</p>
+
+                        <div class="personal-details">
+                            <div class="detail-block">
+                                <h3>My Passions</h3>
+                                <ul class="hobbies-list">
+                                    <li><i class="fas fa-futbol"></i> Soccer -
+                                        Arsenal fan [COYG!!]</li>
+                                    <li><i class="fas fa-swimmer"></i>
+                                        Swimming</li>
+                                    <li><i class="fas fa-pencil-alt"></i>
+                                        Drawing</li>
+                                    <li><i class="fas fa-running"></i>
+                                        Running</li>
+                                    <li><i class="fas fa-book"></i> Reading</li>
+                                    <li><i class="fas fa-film"></i> Movies</li>
+                                </ul>
+                            </div>
+
+                            <div class="detail-block">
+                                <h3>My Philosophy</h3>
+                                <p>Life has taught me to care for others and to
+                                    always look for ways to make a difference.
+                                    Outside of work, I try to enjoy every moment
+                                    and become better than I was yesterday.</p>
+                            </div>
+                        </div>
+
+                        <a href="./resume.html" class="resume-button"
+                            target="_blank">View My Resume</a>
                     </div>
                 </div>
             </div>
@@ -66,34 +109,114 @@
         <section id="projects" class="projects">
             <div class="container">
                 <h2 class="section-title">My Projects</h2>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <div class="project-image"
-                            style="background-image: url('https://via.placeholder.com/400x300');"></div>
-                        <div class="project-info">
-                            <h3>Project Title 1</h3>
-                            <p>Short description of the project.</p>
-                            <a href="#" class="btn">View Project</a>
+
+                <div class="projects-carousel">
+                    <button class="carousel-btn prev-btn"
+                        aria-label="Previous project">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+
+                    <div class="projects-grid">
+                        <!-- Project 1 -->
+                        <div class="project-card">
+                            <div class="project-image"
+                                style="background-image: url('./Images/project1-ss.jpg');"></div>
+                            <div class="project-info">
+                                <h3>VBA | Sales and Inventory Management
+                                    Application</h3>
+                                <p>Developed a VBA-based tool in Excel to
+                                    forecast sales and optimize inventory
+                                    orders</p>
+                                <a href="#" class="btn">View Project</a>
+                            </div>
+                        </div>
+
+                        <!-- Project 2 -->
+                        <div class="project-card">
+                            <div class="project-image"
+                                style="background-image: url('./Images/project2-ss.jpg');"></div>
+                            <div class="project-info">
+                                <h3>Cleatopia</h3>
+                                <p>An event website for soccer lovers. The idea
+                                    is, this website will help people find local
+                                    places to watch soccer with other people,
+                                    create a good community, and enhance social
+                                    life.</p>
+                                <a href="https://www.cleatopia.com" class="btn"
+                                    target="_blank">View Project</a>
+                            </div>
+                        </div>
+
+                        <!-- Project 3 -->
+                        <div class="project-card">
+                            <div class="project-image"
+                                style="background-image: url('./Images/project3-ss.jpg');"></div>
+                            <div class="project-info">
+                                <h3>Reddit Scrapper</h3>
+                                <p>This tool will scrap over selected subreddits
+                                    to find the most relevant and descriptive
+                                    post.</p>
+                                <a
+                                    href="https://github.com/papisho/Reddit-scrapper"
+                                    class="btn" target="_blank">View Project</a>
+                            </div>
+                        </div>
+
+                        <!-- Project 4 -->
+                        <div class="project-card">
+                            <div class="project-image"
+                                style="background-image: url('./Images/bg-testproject.jpg');"></div>
+                            <div class="project-info">
+                                <h3>Future project</h3>
+                                <p>More projects coming soon...</p>
+                                <a
+                                    href="https://github.com/papisho/Reddit-scrapper"
+                                    class="btn" target="_blank">View Project</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="project-card">
-                        <div class="project-image"
-                            style="background-image: url('https://via.placeholder.com/400x300');"></div>
-                        <div class="project-info">
-                            <h3>Project Title 2</h3>
-                            <p>Short description of the project.</p>
-                            <a href="#" class="btn">View Project</a>
-                        </div>
-                    </div>
+
+                    <button class="carousel-btn next-btn"
+                        aria-label="Next project">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
                 </div>
             </div>
         </section>
 
-        <!-- Blog Section -->
-        <section id="blog" class="blog">
+        <!-- Blog Preview Section (NEW) -->
+        <section id="blog-preview" class="blog-preview">
             <div class="container">
-                <h2 class="section-title">From My Blog</h2>
-                <p style="text-align: center;">Blog content coming soon!</p>
+                <h2 class="section-title">Latest Blog Posts</h2>
+                <div class="blog-teasers">
+                    <article class="blog-teaser">
+                        <h3>Post Title 1</h3>
+                        <p class="post-meta">Posted on <time
+                                datetime="2024-05-15">May 15,
+                                2025</time></p>
+                        <p class="post-excerpt">Brief preview of the first
+                            post
+                            content...</p>
+                        <a href="./blogs/post1.html" class="read-more">Read
+                            More
+                            →</a>
+                    </article>
+                    <article class="blog-teaser">
+                        <h3><a href="blog/post2.html">Post Title 2</a></h3>
+                        <p class="post-meta">Posted on <time
+                                datetime="2024-05-10">May 10,
+                                2024</time></p>
+                        <p class="post-excerpt">Brief preview of the second
+                            post
+                            content...</p>
+                        <a href="blog/post2.html" class="read-more">Read
+                            More
+                            →</a>
+                    </article>
+                </div>
+                <div class="view-all">
+                    <a href="./blogs/" class="btn">View All Posts</a>
+                </div>
             </div>
         </section>
 
@@ -102,8 +225,9 @@
             <div class="container">
                 <h2 class="section-title">Get In Touch</h2>
                 <p style="text-align: center;">
-                    Reach out at <a
-                        href="mailto:your.email@example.com">kidusbogale2@gmail.com</a>.
+                    Have a question or want to work together? Reach out at
+                    <a
+                        href="mailto:your.email@example.com">your.email@example.com</a>.
                 </p>
             </div>
         </section>
@@ -113,24 +237,26 @@
             <div class="container">
                 <p>Follow me on</p>
                 <div class="social-links">
-                    <a href="https://github.com/yourusername" target="_blank"
+                    <a href="https://github.com/yourusername"
+                        target="_blank"
                         aria-label="GitHub">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="https://tiktok.com/@yourusername" target="_blank"
+                    <a href="https://tiktok.com/@yourusername"
+                        target="_blank"
                         aria-label="TikTok">
                         <i class="fab fa-tiktok"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/kidus-b-364368209/" target="_blank" aria-label="LinkedIn">
+                    <a href="https://linkedin.com/in/yourprofile"
+                        target="_blank" aria-label="LinkedIn">
                         <i class="fab fa-linkedin"></i>
                     </a>
                 </div>
-                <p>&copy; 2025 Kidus Assefa. All rights reserved.</p>
+                <p>&copy; 2025 Your Name. All rights reserved.</p>
             </div>
         </footer>
 
         <script>
-        // I will be adding js for a nice transition from one section to another
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -141,5 +267,6 @@
             });
         });
     </script>
+        <script src="./script.js"></script>
     </body>
 </html>

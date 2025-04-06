@@ -111,42 +111,5 @@ body {
     left: 0;
 }
 
-/* Print Styles */
-@media print {
-    body {
-        padding: 0;
-        background: white;
-    }
-    
-    .resume-container {
-        box-shadow: none;
-        padding: 20px;
-    }
-    
-    .resume-header {
-        border-bottom: 2px solid #000;
-    }
-    
-    .resume-section h2 {
-        border-bottom: 1px solid #000;
-    }
-}
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .resume-container {
-        padding: 20px;
-    }
-    
-    .resume-item h3 {
-        flex-direction: column;
-    }
-    
-    .resume-item .date {
-        margin-top: 5px;
-    }
-    
-    .skills-grid {
-        grid-template-columns: 1fr;
-    }
-}
+

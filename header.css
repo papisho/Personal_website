@@ -43,14 +43,60 @@ nav {
 }
 
 .nav-links a:hover {
-    color: #4a6fa5;
+    color: #c3ef25;
 }
 
-/* Mobile Menu (basic version - customize as needed) */
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
-    }
-    
-    /* You might want to add a hamburger menu here */
+/* Dropdown Menu Styles */
+.dropdown {
+    position: relative;
+    cursor: pointer;
 }
+
+.dropdown-trigger {
+    font-weight: 500;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    min-width: 200px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.movie:hover {
+    background-color: #233c3c;
+}
+.book:hover {
+    background-color: #233c3c;
+}
+
+.dropdown-menu a {
+    padding: 8px 20px;
+    display: block;
+}
+
+.dropdown-menu li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* Adjust main nav items for dropdown */
+.nav-links > li {
+    position: relative;
+}
+
+
