@@ -1,0 +1,7 @@
+{%- assign address = include.value | default: '' | strip -%}
+{%- assign beginning = address | slice: 0, 1 -%}
+{%- assign https = address | slice: 0, 8 -%}
+{%- if https == 'https://' -%}{{- address | escape -}}
+{%- elsif beginning == '/' -%}{{- address | relative_url | escape -}}
+{%- else -%}{{- '/' | relative_url -}}
+{%- endif -%}

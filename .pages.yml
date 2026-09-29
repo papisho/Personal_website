@@ -1,0 +1,236 @@
+media:
+  input: Images
+  output: /Images
+  extensions:
+  - jpg
+  - jpeg
+  - png
+  - webp
+  - gif
+  - pdf
+content:
+- name: profile
+  label: Profile & contact
+  type: file
+  path: _data/profile.json
+  format: json
+  fields:
+  - name: name
+    label: Name
+    type: string
+    required: true
+  - name: eyebrow
+    label: Eyebrow
+    type: string
+  - name: headline
+    label: Headline
+    type: string
+    required: true
+  - name: headline_accent
+    label: Headline Accent
+    type: string
+    required: true
+  - name: intro
+    label: Intro
+    type: text
+  - name: about_heading
+    label: About Heading
+    type: string
+  - name: about
+    label: About
+    type: text
+  - name: philosophy
+    label: Philosophy
+    type: text
+  - name: portrait
+    label: Portrait
+    type: image
+  - name: portrait_alt
+    label: Portrait Alt
+    type: string
+  - name: interests
+    label: Interests
+    type: string
+    list: true
+  - name: email
+    label: Email
+    type: string
+    required: true
+    pattern:
+      regex: ^[^\s@]+@[^\s@]+\.[^\s@]+$
+      message: Enter an email address.
+  - name: contact_heading
+    label: Contact Heading
+    type: string
+  - name: contact_text
+    label: Contact Text
+    type: text
+  - name: resume_url
+    label: Resume Url
+    type: string
+    description: Use /resume.html for your editable résumé, or a full https:// address.
+    pattern:
+      regex: ^(https://[^\s]+|/[^/][^\s]*)$
+      message: Use a full https:// address or a site path such as /resume.html.
+  - name: resume_file
+    label: Resume File
+    type: file
+    description: 'Optional: upload a PDF résumé. When set, this replaces the résumé
+      link on the homepage.'
+  - name: certifications_url
+    label: Certifications Url
+    type: string
+    pattern:
+      regex: ^(https://[^\s]+|/[^/][^\s]*)$
+      message: Use a full https:// address or a site path such as /resume.html.
+  - name: github_url
+    label: Github Url
+    type: string
+    pattern:
+      regex: ^(https://[^\s]+|/[^/][^\s]*)$
+      message: Use a full https:// address or a site path such as /resume.html.
+  - name: linkedin_url
+    label: Linkedin Url
+    type: string
+    pattern:
+      regex: ^(https://[^\s]+|/[^/][^\s]*)$
+      message: Use a full https:// address or a site path such as /resume.html.
+  - name: description
+    label: Description
+    type: text
+- name: projects
+  label: Projects
+  type: file
+  path: _data/projects.json
+  format: json
+  list: true
+  fields:
+  - name: title
+    label: Title
+    type: string
+    required: true
+  - name: category
+    label: Category
+    type: string
+  - name: description
+    label: Description
+    type: text
+    required: true
+  - name: tags
+    label: Tags
+    type: string
+    list: true
+  - name: url
+    label: Project URL
+    type: string
+    description: Leave empty if there is no public demo. Use a full https:// URL.
+    pattern:
+      regex: ^(https://[^\s]+)?$
+      message: Use https:// or leave empty.
+  - name: link_label
+    label: Link button text
+    type: string
+  - name: image
+    label: Image
+    type: image
+    description: Optional. Upload an image to replace the built-in illustration.
+  - name: image_alt
+    label: Image description
+    type: string
+  - name: visual
+    label: Illustration style
+    type: select
+    options:
+      values:
+      - siftline
+      - buildwise
+      - trackeru
+      - vba
+      - future
+  - name: status
+    label: Status label
+    type: string
+  - name: visible
+    label: Show on website
+    type: boolean
+- name: resume
+  label: Résumé
+  type: file
+  path: _data/resume.json
+  format: json
+  fields:
+  - name: subtitle
+    label: Subtitle
+    type: string
+  - name: sections
+    label: Sections
+    type: object
+    list: true
+    fields:
+    - name: title
+      label: Title
+      type: string
+      required: true
+    - name: entries
+      label: Entries
+      type: object
+      list: true
+      fields:
+      - name: heading
+        label: Heading
+        type: string
+      - name: subheading
+        label: Subheading
+        type: string
+      - name: text
+        label: Text
+        type: text
+      - name: bullets
+        label: Bullets
+        type: string
+        list: true
+- name: notes
+  label: Notes & blog
+  type: collection
+  path: _posts
+  format: yaml-frontmatter
+  exclude:
+  - .gitkeep
+  filename: '{year}-{month}-{day}-{primary}.md'
+  view:
+    primary: title
+    fields:
+    - title
+    - date
+    - published
+    sort: date
+    order: desc
+  fields:
+  - name: title
+    label: Title
+    type: string
+    required: true
+  - name: date
+    label: Date
+    type: date
+    required: true
+  - name: category
+    label: Category
+    type: string
+  - name: description
+    label: Short preview
+    type: text
+  - name: cover
+    label: Cover image
+    type: image
+  - name: cover_alt
+    label: Cover image description
+    type: string
+  - name: published
+    label: Publish on website
+    type: boolean
+    description: Enable to show on the website. Unpublished files are still visible
+      in this public repository.
+  - name: body
+    label: Post
+    type: rich-text

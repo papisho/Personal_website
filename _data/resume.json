@@ -1,0 +1,138 @@
+{
+  "subtitle": "Data-Driven Cybersecurity Professional",
+  "sections": [
+    {
+      "title": "Summary",
+      "entries": [
+        {
+          "heading": "",
+          "subheading": "",
+          "text": "Cybersecurity Management and Analytics graduate with hands-on experience in web development, academic support and data security\nresearch. Demonstrates strong project management and technical skills to resolve IT challenges and enhance system security. Resourceful\nand independent, with a proven commitment to continuous learning and adapting to evolving IT environments.",
+          "bullets": []
+        }
+      ]
+    },
+    {
+      "title": "Education",
+      "entries": [
+        {
+          "heading": "SANS Technology institute Oct 2025 - Aug 2026",
+          "subheading": "",
+          "text": "Certificate, Applied Cybersecurity",
+          "bullets": []
+        },
+        {
+          "heading": "Virginia Tech, Pamplin College of Business Aug\n                            2022 - Dec 2024",
+          "subheading": "",
+          "text": "Bachelor of Science, Cybersecurity Management and\n                        Analytics\nGPA: 3.2",
+          "bullets": []
+        },
+        {
+          "heading": "New River Community College Aug 2020 - May 2022",
+          "subheading": "",
+          "text": "Associates, Business Administration\nGPA: 3.8",
+          "bullets": []
+        }
+      ]
+    },
+    {
+      "title": "Work Experience",
+      "entries": [
+        {
+          "heading": "NewRiver Community College",
+          "subheading": "Education Support Specialist July 2021 - Present",
+          "text": "",
+          "bullets": [
+            "Facilitated math and marketing tutoring sessions, improving student performance by 15%",
+            "Helped students with computer, networking, and programming classes."
+          ]
+        },
+        {
+          "heading": "Virginia Tech & CCI",
+          "subheading": "Summer Research Internship May 2024 -\n                            Aug 2024",
+          "text": "",
+          "bullets": [
+            "Conducted in-depth research on data brokers' practices with a focus on privacy, security, and ethical implications, aligning with\n                            principles of information security and cybersecurity certification.",
+            "Presented actionable recommendations for mitigating risks and protecting consumer privacy, showcasing effective project management\n                            and IT systems knowledge",
+            "Authored a comprehensive report analyzing data collection methods and regulatory impacts, demonstrating robust research skills\n                            applicable to evolving IT security challenges."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Projects",
+      "entries": [
+        {
+          "heading": "Siftline",
+          "subheading": "AI & NEWS",
+          "text": "A calmer way to follow AI, cybersecurity, and technology. Curated feeds, source-linked AI answers, personal briefings, and professional LinkedIn drafts\u2014all in one reading desk.",
+          "bullets": []
+        },
+        {
+          "heading": "BuildWise",
+          "subheading": "HOUSING & CIVIC TECHNOLOGY",
+          "text": "Built for the AI for Housing Hackathon. A preliminary site-screening tool that helps small Pittsburgh housing developers explore parcel facts, zoning, and site constraints before deeper due diligence.",
+          "bullets": []
+        },
+        {
+          "heading": "TrackerU",
+          "subheading": "SPORTS & PLAYER DEVELOPMENT",
+          "text": "A player-development platform for soccer coaches and players. Track progress, organize feedback, and give every player a clearer view of their next step.",
+          "bullets": []
+        },
+        {
+          "heading": "VBA | Sales and Inventory Management Application",
+          "subheading": "DATA & AUTOMATION",
+          "text": "An Excel application built with VBA to forecast sales, support inventory ordering, and make day-to-day business decisions easier through practical dashboards.",
+          "bullets": []
+        }
+      ]
+    },
+    {
+      "title": "Skills",
+      "entries": [
+        {
+          "heading": "Technical Skills",
+          "subheading": "",
+          "text": "",
+          "bullets": [
+            "Python",
+            "Web Development",
+            "SQL",
+            "API"
+          ]
+        },
+        {
+          "heading": "Analytical Skills",
+          "subheading": "",
+          "text": "",
+          "bullets": [
+            "Research",
+            "Risk Assessment",
+            "Statistics"
+          ]
+        },
+        {
+          "heading": "Management & Consulting",
+          "subheading": "",
+          "text": "",
+          "bullets": [
+            "Project Management",
+            "User account management",
+            "Jira"
+          ]
+        },
+        {
+          "heading": "Certifications",
+          "subheading": "",
+          "text": "",
+          "bullets": [
+            "CompTIA Security+ - 05/2024",
+            "GIAC Foundational Cyberecurity Technologies(GFACT) - 08/2025",
+            "GIAC Security Essentials Certification (GSEC) - 01/2026"
+          ]
+        }
+      ]
+    }
+  ]
+}

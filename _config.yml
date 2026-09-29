@@ -1,0 +1,14 @@
+title: Kidus Assefa
+url: https://papisho.github.io
+baseurl: /Personal_website
+markdown: kramdown
+permalink: /blogs/:title/
+timezone: America/New_York
+future: false
+exclude: [README.md, EDITING.md, Gemfile, Gemfile.lock, tests, scripts, vendor, node_modules]
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post

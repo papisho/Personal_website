@@ -1,0 +1,67 @@
+[
+  {
+    "title": "Siftline",
+    "category": "AI & NEWS",
+    "description": "A calmer way to follow AI, cybersecurity, and technology. Curated feeds, source-linked AI answers, personal briefings, and professional LinkedIn drafts—all in one reading desk.",
+    "tags": ["AI assistant", "News aggregation", "Personal briefings"],
+    "url": "https://siftline.kid25.chatgpt.site/",
+    "link_label": "Explore Siftline",
+    "image": "",
+    "image_alt": "",
+    "visual": "siftline",
+    "status": "Live project",
+    "visible": true
+  },
+  {
+    "title": "BuildWise",
+    "category": "HOUSING & CIVIC TECHNOLOGY",
+    "description": "Built for the AI for Housing Hackathon. A preliminary site-screening tool that helps small Pittsburgh housing developers explore parcel facts, zoning, and site constraints before deeper due diligence.",
+    "tags": ["Housing hackathon", "Site screening", "Public data"],
+    "url": "https://buildwise-amber-alpha.vercel.app/",
+    "link_label": "Explore BuildWise",
+    "image": "",
+    "image_alt": "",
+    "visual": "buildwise",
+    "status": "Hackathon prototype",
+    "visible": true
+  },
+  {
+    "title": "TrackerU",
+    "category": "SPORTS & PLAYER DEVELOPMENT",
+    "description": "A player-development platform for soccer coaches and players. Track progress, organize feedback, and give every player a clearer view of their next step.",
+    "tags": ["Soccer", "Player development", "Coaching"],
+    "url": "https://www.trackeru.app",
+    "link_label": "Explore TrackerU",
+    "image": "/Images/trackeru.png",
+    "image_alt": "TrackerU player-development application",
+    "visual": "trackeru",
+    "status": "Live project",
+    "visible": true
+  },
+  {
+    "title": "VBA | Sales and Inventory Management Application",
+    "category": "DATA & AUTOMATION",
+    "description": "An Excel application built with VBA to forecast sales, support inventory ordering, and make day-to-day business decisions easier through practical dashboards.",
+    "tags": ["Excel", "VBA", "Inventory management"],
+    "url": "",
+    "link_label": "",
+    "image": "/Images/project1-ss.jpg",
+    "image_alt": "Sales and inventory management application in Excel",
+    "visual": "vba",
+    "status": "Application",
+    "visible": true
+  },
+  {
+    "title": "Future projects",
+    "category": "WHAT'S NEXT",
+    "description": "New questions. Fresh experiments. More useful things to build. This is where the next idea takes shape.",
+    "tags": [],
+    "url": "https://github.com/papisho",
+    "link_label": "Follow along on GitHub",
+    "image": "",
+    "image_alt": "",
+    "visual": "future",
+    "status": "In the making",
+    "visible": true
+  }
+]

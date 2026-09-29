@@ -1,0 +1,5 @@
+---
+layout: null
+title: Notes
+---
+<!DOCTYPE html><html lang="en"><head>{% include head.html %}</head><body>{% include header.html %}<main id="main" class="shell section notes-page"><p class="eyebrow">NOTES & PERSPECTIVES</p><h1>Learning, <em>out loud.</em></h1><p class="page-intro">Thoughts on technology, building, and everything in between.</p>{% if site.posts.size > 0 %}<div class="notes-grid">{% for post in site.posts %}{% include note.html post=post %}{% endfor %}</div>{% else %}<div class="notes-empty"><span aria-hidden="true">↳</span><div><h2>First notes coming soon.</h2><p>In the meantime, take a look at what I've been building.</p><a class="text-link" href="{{ '/' | relative_url }}#projects">Explore my work ↗</a></div></div>{% endif %}</main>{% include footer.html %}</body></html>
