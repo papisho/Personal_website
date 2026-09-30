@@ -20,5 +20,5 @@ description: |-
   The Hacker News: https://thehackernews.com/2026/09/attackers-exploit-zimbra-flaw-to-deploy.html
   The Hacker News: https://thehackernews.com/2026/09/attackers-abuse-msp360-to-deploy.html
 cover: /Images/#2 image.jpeg
-published: false
+published: true
 ---
